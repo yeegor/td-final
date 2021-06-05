@@ -8,6 +8,7 @@ export default function Hero({
     return (
         <section className={`Hero ${(name && `Hero_${name}`) || ''}`}>
             <img className="Hero-Image" src={image} alt={heading} />
+            <div className="Hero-Cover" />
             <h2 className="Hero-Heading">{heading}</h2>
         </section>
     )
