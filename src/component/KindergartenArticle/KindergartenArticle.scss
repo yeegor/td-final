@@ -1,17 +1,4 @@
 .HomepageArticle {
     &_Kindergarten {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-        .Hero {
-            height: 66vh;
-            width: 100vw;
-        }
-
-        .Article-Text {
-            margin: 3rem 0;
-            max-width: 50%;
-        }
     }
 }

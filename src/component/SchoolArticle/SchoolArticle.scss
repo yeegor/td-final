@@ -1,15 +1,5 @@
 .HomepageArticle {
     &_School {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        
-        .Hero {
-            height: 100vh;
-        }
-
-        .Article-Text {
-            margin: 0 15%;
-        }
+       
     }
 }

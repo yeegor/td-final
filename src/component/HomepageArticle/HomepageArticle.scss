@@ -7,4 +7,61 @@
     .Article-Text {
         text-align: justify;
     }
+
+    &_type_FILLED {
+        .Hero {
+            width: 100%;
+            height: 100%;
+
+            z-index: 0;
+
+            &-Heading {
+                top: 33%;
+            }
+        }
+
+        .Article-Text {
+            z-index: 1;
+
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translateX(-50%);
+
+            width: 50%;
+            padding: 3% 5%;
+
+            background-color: white;
+        }
+    }
+    
+    &_type_SIDE_TO_SIDE { 
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        
+        .Hero {
+            height: 100vh;
+        }
+
+        .Article-Text {
+            margin: 0 15%;
+        }
+    }
+
+    &_type_IMAGE_TOP {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .Hero {
+            height: 66vh;
+            width: 100vw;
+        }
+
+        .Article-Text {
+            margin: 3rem 0;
+            max-width: 50%;
+        }
+    }
 }
