@@ -7,7 +7,7 @@ import HomepageArticle, { homepageArticleTypes } from '../HomepageArticle/Homepa
 
 export default function KindergartenArticle() {
     return (
-        <HomepageArticle type={homepageArticleTypes.IMAGE_TOP} name="Kindergarten">
+        <HomepageArticle type={homepageArticleTypes.FILLED} name="Kindergarten">
             <Hero image={kindergarten} heading="Riga 234. Kindergarten"/>
             <p className="Article-Text">{loremIpsum}</p>
         </HomepageArticle>

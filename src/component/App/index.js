@@ -6,10 +6,10 @@ import BotanicalGardenArticle from '../BotanicalGardenArticle'
 function App() {
   return (
     <main>
-      <BotanicalGardenArticle />
+      <KindergartenArticle />
       <SchoolArticle />
       <StradinaArticle />
-      <KindergartenArticle />
+      <BotanicalGardenArticle />
     </main>
   );
 }
