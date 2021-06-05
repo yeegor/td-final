@@ -8,7 +8,7 @@ import HomepageArticle, { homepageArticleTypes } from '../HomepageArticle/Homepa
 export default function SchoolArticle() {
     return (
         <HomepageArticle type={homepageArticleTypes.SIDE_TO_SIDE} name="School">
-            <Hero image={school} heading="Riga Ostvald Secondary School"/>
+            <Hero image={school} heading="Riga Ostvald Secondary&nbsp;School"/>
             <p className="Article-Text">{loremIpsum}</p>
         </HomepageArticle>
     )
