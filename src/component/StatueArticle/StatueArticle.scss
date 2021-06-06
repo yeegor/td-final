@@ -1,5 +1,9 @@
 .HomepageArticle {
-    &_Bridge {
-        
+    &_Statue {
+        .Hero {
+            &-Image {
+                object-fit: cover;
+            }
+        }
     }
 }

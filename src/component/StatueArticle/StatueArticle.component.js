@@ -7,7 +7,7 @@ import HomepageArticle, { homepageArticleTypes } from '../HomepageArticle/Homepa
 
 export default function StatueArticle() {
     return (
-        <HomepageArticle type={homepageArticleTypes.SIDE_TO_SIDE}>
+        <HomepageArticle name="Statue" type={homepageArticleTypes.SIDE_TO_SIDE}>
             <Hero image={statue} heading="Statue of Liberty"/>
             <p className="Article-Text">{loremIpsum}</p>
         </HomepageArticle>
