@@ -1,19 +1,26 @@
+:root {
+    --font-size-h1: 29px;
+    --font-size-h2: 24px;
+    --font-size-h3: 18px;
+    --font-size-p: 17px;
+}
+
 html {
     font-family: 'Roboto', sans-serif;
 }
 
 h1 {
-    font-size: 29px;
+    font-size: var(--font-size-h1);
 }
 
 h2 {
-    font-size: 24px
+    font-size: var(--font-size-h2)
 }
 
 h3 {
-    font-size: 18px;
+    font-size: var(--font-size-h3);
 }
 
 p {
-    font-size: 17px;
+    font-size: var(--font-size-p);
 }

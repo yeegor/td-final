@@ -1,0 +1,38 @@
+.Header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    &-Item {
+        padding: 1% 0;
+
+        text-align: center;
+        text-decoration: inherit;
+        color: inherit;
+
+        font-size: var(--font-size-h2);
+
+        display: block;
+        width: 100%;
+
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: white;
+            background-color: black;
+        }
+
+        &:active,
+        &:focus,
+        &_isActive {
+            color: white;
+            background-color: black;
+        }
+    }
+}

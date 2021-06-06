@@ -6,6 +6,7 @@ import BotanicalGardenArticle from '../BotanicalGardenArticle'
 import BridgeArticle from "../BridgeArticle";
 import HedgehogArticle from "../HedgehogArticle";
 import StatueArticle from "../StatueArticle";
+import HeaderContextProvider from '../../context/Header.context';
 
 const articleIds = {
   Kindergarten: 'Kindergarten',
@@ -19,16 +20,18 @@ const articleIds = {
 
 function App() {
   return (
-    <main>
-      <Header articleIds={articleIds} />
-      <KindergartenArticle id={articleIds.Kindergarten} />
-      <SchoolArticle id={articleIds.School} />
-      <StradinaArticle id={articleIds.Stradina} />
-      <BotanicalGardenArticle id={articleIds.Botanical} />
-      <HedgehogArticle id={articleIds.Hedgehog} />
-      <BridgeArticle id={articleIds.Bridge} />
-      <StatueArticle id={articleIds.Statue} />
-    </main>
+    <HeaderContextProvider>
+      <main>
+        <Header articleIds={articleIds} />
+        <KindergartenArticle id={articleIds.Kindergarten} />
+        <SchoolArticle id={articleIds.School} />
+        <StradinaArticle id={articleIds.Stradina} />
+        <BotanicalGardenArticle id={articleIds.Botanical} />
+        <HedgehogArticle id={articleIds.Hedgehog} />
+        <BridgeArticle id={articleIds.Bridge} />
+        <StatueArticle id={articleIds.Statue} />
+      </main>
+    </HeaderContextProvider>
   );
 }
 
