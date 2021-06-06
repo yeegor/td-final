@@ -1,4 +1,6 @@
 import { useContext } from 'react';
+import { useTranslation } from 'react-i18next';
+
 import LanguageSwitcher from '../LanguageSwitcher';
 import { HeaderContext } from '../../context/Header.context';
 
@@ -26,6 +28,7 @@ function getHeaderItemsIndexes(articleNames, activeHeaderItemName) {
 
 export default function Header({ articleIds }) {
     const { activeHeaderItemName } = useContext(HeaderContext);
+    const { t } = useTranslation();
 
     const isMobile = getIsMobile();
 
@@ -33,7 +36,7 @@ export default function Header({ articleIds }) {
         <header className="Header">
             {/* Desktop header */}
             {!isMobile && Object.entries(articleIds).map(([name, id]) => (
-                <a key={id} className={`Header-Item ${(activeHeaderItemName === id && 'Header-Item_isActive') || ''}`} href={`#${id}`}>{name}</a>
+                <a key={id} className={`Header-Item ${(activeHeaderItemName === id && 'Header-Item_isActive') || ''}`} href={`#${id}`}>{t(name)}</a>
             ))}
 
             {/* Mobile header */}
@@ -54,6 +57,7 @@ export default function Header({ articleIds }) {
                 )
             })()}
 
+            {/* Language Switcher */}
             <div className="Header-Item Header-Item_lang">
                 <LanguageSwitcher />
             </div>
