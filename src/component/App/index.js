@@ -2,13 +2,13 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
 import Header from '../Header';
-import KindergartenArticle from "../articles/KindergartenArticle";
-import SchoolArticle from "../articles/SchoolArticle";
-import StradinaArticle from "../articles/StradinaArticle";
+import KindergartenArticle from "../_articles/KindergartenArticle";
+import SchoolArticle from "../_articles/SchoolArticle";
+import StradinaArticle from "../_articles/StradinaArticle";
 import BotanicalGardenArticle from '../articles/BotanicalGardenArticle'
-import BridgeArticle from "../articles/BridgeArticle";
-import HedgehogArticle from "../articles/HedgehogArticle";
-import StatueArticle from "../articles/StatueArticle";
+import BridgeArticle from "../_articles/BridgeArticle";
+import HedgehogArticle from "../_articles/HedgehogArticle";
+import StatueArticle from "../_articles/StatueArticle";
 import HeaderContextProvider from '../../context/Header.context';
 import Footer from '../Footer/Footer.component';
 
