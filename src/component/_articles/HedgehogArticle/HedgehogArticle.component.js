@@ -11,7 +11,7 @@ export default function HedgehogArticle({ id }) {
 
     return (
         <HomepageArticle type={homepageArticleTypes.FILLED} name={id}>
-            <Hero image={hedgehog} heading="Hedgehod in the Fog"/>
+            <Hero image={hedgehog} heading="Hedgehog in the Fog"/>
             <div className="Article-Text">
                 <p>{t('hedgehogText1')}</p>
                 <p>{t('hedgehogText2')}</p>

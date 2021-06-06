@@ -1,3 +1,5 @@
+import { useTranslation } from 'react-i18next';
+
 import './Hero.scss';
 
 export default function Hero({
@@ -5,11 +7,13 @@ export default function Hero({
     heading,
     name
 }) {
+    const { t } = useTranslation();
+
     return (
         <section className={`Hero ${(name && `Hero_${name}`) || ''}`}>
-            <img className="Hero-Image" src={image} alt={heading} />
+            <img className="Hero-Image" src={image} alt={t(heading)} />
             <div className="Hero-Cover" />
-            <h2 className="Hero-Heading">{heading}</h2>
+            <h2 className="Hero-Heading">{t(heading)}</h2>
         </section>
     )
 }

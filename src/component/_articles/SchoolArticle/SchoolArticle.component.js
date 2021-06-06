@@ -10,7 +10,7 @@ export default function SchoolArticle({ id }) {
 
     return (
         <HomepageArticle type={homepageArticleTypes.SIDE_TO_SIDE} name={id}>
-            <Hero image={school} heading="Riga Ostvald Secondary&nbsp;School"/>
+            <Hero image={school} heading="Riga Ostvald Secondary School"/>
             <div className="Article-Text">
                 <p>{t('schoolText1')}</p>
                 <p>{t('schoolText2')}</p>
