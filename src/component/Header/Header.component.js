@@ -32,7 +32,7 @@ export default function Header({ articleIds }) {
         <header className="Header">
             {/* Desktop header */}
             {!isMobile && Object.entries(articleIds).map(([name, id]) => (
-                <a className={`Header-Item ${(activeHeaderItemName === id && 'Header-Item_isActive') || ''}`} href={`#${id}`}>{name}</a>
+                <a key={id} className={`Header-Item ${(activeHeaderItemName === id && 'Header-Item_isActive') || ''}`} href={`#${id}`}>{name}</a>
             ))}
 
             {/* Mobile header */}

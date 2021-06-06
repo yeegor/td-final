@@ -2,4 +2,4 @@ const loremIpsum = `Sed ut perspiciatis unde omnis iste natus error sit voluptat
 Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
 Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.`
 
-export default loremIpsum.split('\n').map((one) => <p>{one}<br /><br /></p>);
+export default loremIpsum.split('\n').map((one, i) => <span key={i}>{one}<br /><br /></span>);
