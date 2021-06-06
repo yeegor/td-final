@@ -16,7 +16,7 @@ export default function HomepageArticle({
     }
 
     return (
-        <article className={`HomepageArticle HomepageArticle_type_${type} HomepageArticle_${name}`}>
+        <article id={name} className={`HomepageArticle HomepageArticle_type_${type} HomepageArticle_${name}`}>
             {children}
         </article>
     )

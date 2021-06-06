@@ -5,9 +5,9 @@ import loremIpsum from '../../asset/lorem-ipsum';
 import Hero from '../Hero';
 import HomepageArticle, { homepageArticleTypes } from '../HomepageArticle/HomepageArticle';
 
-export default function StatueArticle() {
+export default function StatueArticle({ id }) {
     return (
-        <HomepageArticle name="Statue" type={homepageArticleTypes.SIDE_TO_SIDE}>
+        <HomepageArticle type={homepageArticleTypes.SIDE_TO_SIDE} name={id}>
             <Hero image={statue} heading="Statue of Liberty"/>
             <p className="Article-Text">{loremIpsum}</p>
         </HomepageArticle>

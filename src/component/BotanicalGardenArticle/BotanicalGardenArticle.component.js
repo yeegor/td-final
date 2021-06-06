@@ -5,9 +5,9 @@ import loremIpsum from '../../asset/lorem-ipsum';
 import Hero from '../Hero';
 import HomepageArticle, { homepageArticleTypes } from '../HomepageArticle/HomepageArticle';
 
-export default function BotanicalGardenArticle() {
+export default function BotanicalGardenArticle({ id }) {
     return (
-        <HomepageArticle name="Botanical" type={homepageArticleTypes.IMAGE_TOP}>
+        <HomepageArticle type={homepageArticleTypes.IMAGE_TOP} name={id}>
             <Hero image={botanical} heading="Botanical Garden"/>
             <p className="Article-Text">{loremIpsum}</p>
         </HomepageArticle>
