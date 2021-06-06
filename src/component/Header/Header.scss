@@ -1,3 +1,5 @@
+@import '../../style/media.scss';
+
 .Header {
     position: sticky;
     top: 0;
@@ -21,7 +23,9 @@
         display: block;
         width: 100%;
 
-        transition: all 0.3s ease;
+        @include desktop {
+            transition: all 0.3s ease;
+        }
 
         &:hover {
             color: white;
