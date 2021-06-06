@@ -1,3 +1,6 @@
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+
 import Header from '../Header';
 import KindergartenArticle from "../KindergartenArticle";
 import SchoolArticle from "../SchoolArticle";
@@ -8,6 +11,23 @@ import HedgehogArticle from "../HedgehogArticle";
 import StatueArticle from "../StatueArticle";
 import HeaderContextProvider from '../../context/Header.context';
 import Footer from '../Footer/Footer.component';
+
+const en = require('../../i18n/en_US.json');
+const lv = require('../../i18n/lv_LV.json');
+
+i18n
+  .use(initReactI18next)
+  .init({
+    resources: {
+      en,
+      lv
+    },
+    lng: 'en',
+
+    interpolation: {
+      escapeValue: false // ! ?
+    }
+  });
 
 const articleIds = {
   Kindergarten: 'Kindergarten',
