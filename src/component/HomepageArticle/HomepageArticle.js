@@ -18,9 +18,7 @@ export default function HomepageArticle({
     const { setActiveHeaderItemName } = useContext(HeaderContext);
 
     const { current: observer } = useRef(new IntersectionObserver(
-        ([entry], observer) => {
-            console.log(`${name} is ${entry.isIntersecting} visible ${entry.intersectionRatio}%`);
-
+        ([entry]) => {
             if (entry.isIntersecting) {
                 setActiveHeaderItemName(name)
             }
