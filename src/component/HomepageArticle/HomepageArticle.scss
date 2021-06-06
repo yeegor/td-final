@@ -91,5 +91,40 @@
                 max-width: 50%;
             }
         }
+
+        &_type_FILLED_SIDE_TO_SIDE {
+            .Hero {
+                width: 100%;
+                height: 100%;
+        
+                z-index: 0;
+
+                &-Image {
+                    object-fit: cover;
+                    // object-position: 50% 50%;
+                }
+        
+                &-Heading {
+                    top: 20%;
+                    max-width: 50%;
+
+                    transform: translate(0, -50%);
+                }
+            }
+        
+            .Article-Text {
+                z-index: 1;
+        
+                position: absolute;
+                top: 50%;
+                left: 25%;
+                transform: translate(-50%, -50%);
+        
+                width: 30%;
+                padding: 3% 5%;
+        
+                background-color: white;
+            }
+        }
     }
 }

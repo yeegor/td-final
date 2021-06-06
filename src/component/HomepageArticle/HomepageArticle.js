@@ -4,6 +4,7 @@ import './HomepageArticle.scss';
 
 export const homepageArticleTypes = {
     FILLED: 'FILLED',
+    FILLED_SIDE_TO_SIDE: 'FILLED_SIDE_TO_SIDE',
     SIDE_TO_SIDE: 'SIDE_TO_SIDE',
     IMAGE_TOP: 'IMAGE_TOP'
 };
