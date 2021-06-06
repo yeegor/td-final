@@ -19,7 +19,7 @@
 
     @include mobile {
         display: grid;
-        grid-template-columns: 1fr 3fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 3fr 1fr;
     }
 
     &-Item {
@@ -60,6 +60,7 @@
         &_lang {
             @include desktop {
                 padding: 0;
+                width: 30%;
             }
 
             &:hover {

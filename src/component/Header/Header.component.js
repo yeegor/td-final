@@ -34,6 +34,11 @@ export default function Header({ articleIds }) {
 
     return (
         <header className="Header">
+            {/* Language Switcher */}
+            <div className="Header-Item Header-Item_lang">
+                <LanguageSwitcher />
+            </div>
+            
             {/* Desktop header */}
             {!isMobile && Object.entries(articleIds).map(([name, id]) => (
                 <a key={id} className={`Header-Item ${(activeHeaderItemName === id && 'Header-Item_isActive') || ''}`} href={`#${id}`}>{t(name)}</a>
@@ -56,11 +61,6 @@ export default function Header({ articleIds }) {
                     </>
                 )
             })()}
-
-            {/* Language Switcher */}
-            <div className="Header-Item Header-Item_lang">
-                <LanguageSwitcher />
-            </div>
         </header>
     );
 }
