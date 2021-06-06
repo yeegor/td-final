@@ -7,6 +7,7 @@ import BridgeArticle from "../BridgeArticle";
 import HedgehogArticle from "../HedgehogArticle";
 import StatueArticle from "../StatueArticle";
 import HeaderContextProvider from '../../context/Header.context';
+import Footer from '../Footer/Footer.component';
 
 const articleIds = {
   Kindergarten: 'Kindergarten',
@@ -21,8 +22,8 @@ const articleIds = {
 function App() {
   return (
     <HeaderContextProvider>
+      <Header articleIds={articleIds} />
       <main>
-        <Header articleIds={articleIds} />
         <KindergartenArticle id={articleIds.Kindergarten} />
         <SchoolArticle id={articleIds.School} />
         <StradinaArticle id={articleIds.Stradina} />
@@ -31,6 +32,7 @@ function App() {
         <BridgeArticle id={articleIds.Bridge} />
         <StatueArticle id={articleIds.Statue} />
       </main>
+      <Footer />
     </HeaderContextProvider>
   );
 }

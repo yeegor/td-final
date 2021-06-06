@@ -1,0 +1,26 @@
+@import '../../style/media.scss';
+
+.Footer {
+    background-color: black;
+
+    &-Item {
+        color: white;
+        text-align: right;
+
+        @include mobile {
+            padding: 5px;
+        }
+
+        @include desktop {
+            &:first-of-type {
+                padding-top: 15px;
+            }
+
+            &:last-of-type {
+                padding-bottom: 15px;
+            }
+
+            padding: 0 15px 10px;
+        }
+    }
+}
