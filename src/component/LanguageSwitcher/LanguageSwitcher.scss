@@ -1,0 +1,20 @@
+.LanguageSwitcher {
+    overflow: hidden;
+    color: black;
+
+    cursor: pointer;
+
+    height: 1em;
+
+    &-Item {
+        background-color: white;
+
+        &:not(:first-of-type) {
+            padding: 25px 0 10px 0;
+        }
+    }
+
+    &:hover {
+        overflow: visible;
+    }
+}

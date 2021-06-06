@@ -1,5 +1,9 @@
 @import '../../style/media.scss';
 
+:root {
+    --header-vertical-padding: 12px;
+}
+
 .Header {
     position: sticky;
     top: 0;
@@ -7,15 +11,29 @@
 
     background-color: white;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    @include desktop {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    @include mobile {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr 1fr;
+    }
 
     &-Item {
-        padding: 1% 0;
+        @include mobile {
+            padding: var(--header-vertical-padding) 0;
+        }
+
+        @include desktop {
+            padding: 1% 0;
+        }
 
         text-align: center;
         text-decoration: inherit;
+        user-select: none;
         color: inherit;
 
         font-size: var(--font-size-h2);
@@ -37,6 +55,17 @@
         &_isActive {
             color: white;
             background-color: black;
+        }
+
+        &_lang {
+            @include desktop {
+                padding: 0;
+            }
+
+            &:hover {
+                color: inherit;
+                background-color: inherit;
+            }
         }
     }
 }

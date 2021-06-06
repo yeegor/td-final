@@ -1,4 +1,5 @@
 import { useContext } from 'react';
+import LanguageSwitcher from '../LanguageSwitcher';
 import { HeaderContext } from '../../context/Header.context';
 
 import getIsMobile from '../../util/isMobile';
@@ -52,6 +53,10 @@ export default function Header({ articleIds }) {
                     </>
                 )
             })()}
+
+            <div className="Header-Item Header-Item_lang">
+                <LanguageSwitcher />
+            </div>
         </header>
     );
 }
