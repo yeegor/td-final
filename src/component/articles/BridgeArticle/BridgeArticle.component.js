@@ -2,9 +2,9 @@ import { useTranslation } from 'react-i18next'
 
 import './BridgeArticle.scss';
 
-import bridge from '../../asset/bridge.jpeg';
-import Hero from '../Hero';
-import HomepageArticle, { homepageArticleTypes } from '../HomepageArticle/HomepageArticle';
+import bridge from '../../../asset/bridge.jpeg';
+import Hero from '../../Hero';
+import HomepageArticle, { homepageArticleTypes } from '../../HomepageArticle/HomepageArticle';
 
 export default function BridgeArticle({ id }) {
     const { t } = useTranslation();

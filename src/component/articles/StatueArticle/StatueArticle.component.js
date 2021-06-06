@@ -1,9 +1,9 @@
 import { useTranslation } from 'react-i18next'
 import './StatueArticle.scss';
 
-import statue from '../../asset/liberty-statue.jpeg';
-import Hero from '../Hero';
-import HomepageArticle, { homepageArticleTypes } from '../HomepageArticle/HomepageArticle';
+import statue from '../../../asset/liberty-statue.jpeg';
+import Hero from '../../Hero';
+import HomepageArticle, { homepageArticleTypes } from '../../HomepageArticle/HomepageArticle';
 
 export default function StatueArticle({ id }) {
     const { t } = useTranslation();

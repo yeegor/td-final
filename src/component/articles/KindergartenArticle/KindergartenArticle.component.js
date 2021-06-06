@@ -1,9 +1,9 @@
 import { useTranslation } from 'react-i18next';
 import './KindergartenArticle.scss';
 
-import kindergarten from '../../asset/kindergarten.jpeg';
-import Hero from '../Hero';
-import HomepageArticle, { homepageArticleTypes } from '../HomepageArticle/HomepageArticle';
+import kindergarten from '../../../asset/kindergarten.jpeg';
+import Hero from '../../Hero';
+import HomepageArticle, { homepageArticleTypes } from '../../HomepageArticle/HomepageArticle';
 
 export default function KindergartenArticle({ id }) {
     const { t } = useTranslation();

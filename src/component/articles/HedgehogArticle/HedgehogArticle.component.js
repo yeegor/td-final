@@ -2,9 +2,9 @@ import { useTranslation } from 'react-i18next'
 
 import './HedgehogArticle.scss';
 
-import hedgehog from '../../asset/hedgehog.jpeg';
-import Hero from '../Hero';
-import HomepageArticle, { homepageArticleTypes } from '../HomepageArticle/HomepageArticle';
+import hedgehog from '../../../asset/hedgehog.jpeg';
+import Hero from '../../Hero';
+import HomepageArticle, { homepageArticleTypes } from '../../HomepageArticle/HomepageArticle';
 
 export default function HedgehogArticle({ id }) {
     const { t } = useTranslation();

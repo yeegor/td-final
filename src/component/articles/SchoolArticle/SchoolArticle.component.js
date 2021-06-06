@@ -1,9 +1,9 @@
 import { useTranslation } from 'react-i18next'
 import './SchoolArticle.scss';
 
-import school from '../../asset/school.jpeg';
-import Hero from '../Hero';
-import HomepageArticle, { homepageArticleTypes } from '../HomepageArticle/HomepageArticle';
+import school from '../../../asset/school.jpeg';
+import Hero from '../../Hero';
+import HomepageArticle, { homepageArticleTypes } from '../../HomepageArticle/HomepageArticle';
 
 export default function SchoolArticle({ id }) {
     const { t } = useTranslation();

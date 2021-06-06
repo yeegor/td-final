@@ -2,9 +2,9 @@ import { useTranslation } from 'react-i18next'
 
 import './BotanicalGardenArticle.scss';
 
-import botanical from '../../asset/botanical-garden.jpeg';
-import Hero from '../Hero';
-import HomepageArticle, { homepageArticleTypes } from '../HomepageArticle/HomepageArticle';
+import botanical from '../../../asset/botanical-garden.jpeg';
+import Hero from '../../Hero';
+import HomepageArticle, { homepageArticleTypes } from '../../HomepageArticle/HomepageArticle';
 
 export default function BotanicalGardenArticle({ id }) {
     const { t } = useTranslation();

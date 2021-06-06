@@ -1,9 +1,9 @@
 import { useTranslation } from 'react-i18next'
 import './StradinaArticle.scss';
 
-import stradina from '../../asset/stradina.jpeg';
-import Hero from '../Hero';
-import HomepageArticle, { homepageArticleTypes } from '../HomepageArticle/HomepageArticle';
+import stradina from '../../../asset/stradina.jpeg';
+import Hero from '../../Hero';
+import HomepageArticle, { homepageArticleTypes } from '../../HomepageArticle/HomepageArticle';
 
 export default function StradinaArticle({ id }) {
     const { t } = useTranslation();
