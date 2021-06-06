@@ -3,6 +3,7 @@
         .Hero {
             &-Image {
                 object-fit: cover;
+                object-position: 50% 0;
             }
         }
     }
