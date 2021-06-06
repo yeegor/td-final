@@ -11,7 +11,11 @@ export default function KindergartenArticle({ id }) {
     return (
         <HomepageArticle type={homepageArticleTypes.FILLED_SIDE_TO_SIDE} name={id}>
             <Hero image={kindergarten} heading="Riga 234. Kindergarten"/>
-            <p className="Article-Text">{t('kindergartenText')}</p>
+            <div className="Article-Text">
+                <p>{t('kindergartenText1')}</p>
+                <p>{t('kindergartenText2')}</p>
+                <p>{t('kindergartenText3')}</p>
+            </div>
         </HomepageArticle>
     )
 }

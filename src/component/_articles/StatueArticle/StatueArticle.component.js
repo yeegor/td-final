@@ -10,7 +10,13 @@ export default function StatueArticle({ id }) {
 
     return (
         <HomepageArticle type={homepageArticleTypes.SIDE_TO_SIDE} name={id}>
-            <p className="Article-Text">{t('statueText')}</p>
+            <div className="Article-Text">
+                <p>{t('statueText1')}</p>
+                <p>{t('statueText2')}</p>
+                <p>{t('statueText3')}</p>
+                <p>{t('statueText4')}</p>
+            </div>
+            
             <Hero image={statue} heading="Statue of Liberty"/>
         </HomepageArticle>
     )

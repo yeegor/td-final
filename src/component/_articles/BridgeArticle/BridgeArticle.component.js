@@ -12,7 +12,12 @@ export default function BridgeArticle({ id }) {
     return (
         <HomepageArticle type={homepageArticleTypes.SIDE_TO_SIDE} name={id}>
             <Hero image={bridge} heading="Vanšu Bridge"/>
-            <p className="Article-Text">{t('bridgeText')}</p>
+            <div className="Article-Text">
+                <p>{t('bridgeText1')}</p>
+                <p>{t('bridgeText2')}</p>
+                <p>{t('bridgeText3')}</p>
+                <p>{t('bridgeText4')}</p>
+            </div>
         </HomepageArticle>
     )
 }

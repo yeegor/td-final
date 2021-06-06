@@ -15,6 +15,10 @@
 
     .Article-Text {
         text-align: justify;
+
+        p:not(:last-of-type) {
+            padding-bottom: 1em;
+        }
     }
 
     @include mobile {

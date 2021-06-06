@@ -12,7 +12,12 @@ export default function BotanicalGardenArticle({ id }) {
     return (
         <HomepageArticle type={homepageArticleTypes.FILLED} name={id}>
             <Hero image={botanical} heading="Botanical Garden"/>
-            <p className="Article-Text">{t('botanicalText')}</p>
+            <div className="Article-Text">
+                <p>{t('botanicalText1')}</p>
+                <p>{t('botanicalText2')}</p>
+                <p>{t('botanicalText3')}</p>
+                <p>{t('botanicalText4')}</p>
+            </div>
         </HomepageArticle>
     )
 }

@@ -10,7 +10,12 @@ export default function StradinaArticle({ id }) {
 
     return (
         <HomepageArticle type={homepageArticleTypes.SIDE_TO_SIDE} name={id}>
-            <p className="Article-Text">{t('stradinaText')}</p>
+            <div className="Article-Text">
+                <p>{t('stradinaText1')}</p>
+                <p>{t('stradinaText2')}</p>
+                <p>{t('stradinaText3')}</p>
+                <p>{t('stradinaText4')}</p>
+            </div>
             <Hero image={stradina} heading="Stradiņš University"/>
         </HomepageArticle>
     )

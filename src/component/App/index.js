@@ -5,7 +5,7 @@ import Header from '../Header';
 import KindergartenArticle from "../_articles/KindergartenArticle";
 import SchoolArticle from "../_articles/SchoolArticle";
 import StradinaArticle from "../_articles/StradinaArticle";
-import BotanicalGardenArticle from '../articles/BotanicalGardenArticle'
+import BotanicalGardenArticle from '../_articles/BotanicalGardenArticle'
 import BridgeArticle from "../_articles/BridgeArticle";
 import HedgehogArticle from "../_articles/HedgehogArticle";
 import StatueArticle from "../_articles/StatueArticle";
