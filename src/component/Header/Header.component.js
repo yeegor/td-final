@@ -42,8 +42,6 @@ export default function Header({ articleIds }) {
 
                 const indexes = getHeaderItemsIndexes(articleNames, activeHeaderItemName);
 
-                console.log({ indexes });
-
                 const [prev, current, next] = indexes.map((one) => articles[one][1]);
 
                 return (
