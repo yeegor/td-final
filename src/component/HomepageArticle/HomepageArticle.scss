@@ -104,7 +104,6 @@
                 }
         
                 &-Heading {
-                    top: 20%;
                     max-width: 50%;
 
                     transform: translate(0, -50%);
@@ -115,14 +114,44 @@
                 z-index: 1;
         
                 position: absolute;
-                top: 55%;
-                left: 25%;
-                transform: translate(-50%, -50%);
-        
                 width: 30%;
                 padding: 3% 5%;
         
                 background-color: white;
+            }
+        }
+    }
+
+    @include after-tablet {
+        &_type_FILLED_SIDE_TO_SIDE {
+            .Hero {
+                &-Heading {
+                    top: 27%;
+                }
+            }
+
+            .Article-Text {
+                top: 55%;
+                left: 25%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+
+    @include tablet {
+        &_type_FILLED_SIDE_TO_SIDE {
+            .Hero {
+                &-Heading {
+                    top: 25%;
+                    max-width: 50%;
+    
+                    transform: translate(0, -50%);
+                }
+            }
+
+            .Article-Text {
+                bottom: 20%;
+                left: 5%;
             }
         }
     }
